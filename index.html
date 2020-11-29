@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Lab00</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>        
+        <div class="navbar-text col-4">
+            <a class="navbar-brand" href="#lab_02.html">Практична робота №1</a>
+        </div>
+        <form>
+            <div class="form-group">
+                <div class="input-group col-6">
+                    <div class="col-4">
+                        <label>First argument</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="firstArgument">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <label>Second argument</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="secondArgument">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <label>Operation</label>
+                    </div>
+                    <div class="col-6">
+                        <select class="custom-select" id="selectOperation">
+                            <option selected>+</option>
+                            <option value="1">-</option>
+                            <option value="2">*</option>
+                            <option value="3">/</option>
+                        </select>
+                    </div>
+                </div>                
+            </div>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-primary" id="btnCalc" >Calculate</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <label>Result</label>
+                    </div>
+                    <div class="col-6">
+                        <p class="form-control" id="resultText">No result...</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+                <div class="input-group col-6">
+                    <div class="col-4">
+                        <label>Enter word to check...</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="dataToCheck">
+                    </div>
+                </div>
+            </div>            
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-primary" id="btnCheck">Check</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <label>List of unique words</label>
+                    </div>
+                    <div class="col-6">
+                        <p class="form-control" id="checkResult">No result...</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
