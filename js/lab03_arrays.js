@@ -67,6 +67,13 @@ function getResultByReduce(){
     array.reduce((res,item) => res - item, 0); // result = -45, initial value is 0
 }
 
+function invokeReduce2(){
+	array.reduce(function(sum, item, index, arr){
+    console.log(`previous elelement is: ${sum}. Current item is ${item} with index ${index}. Lenght is ${arr.length}`);
+    return sum * item;
+},1);
+}
+
 function getResultByReduceRight(){
     array.reduceRight((sum,item) => sum - item,100); // result = -55, initial value is 100
 }
