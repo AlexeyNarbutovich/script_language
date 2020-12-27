@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="html">
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="./css/bootstrap-grid.css"/>
+        <link rel="stylesheet" href="./css/bootstrap.css"/>
+        <title>Lab03</title>
+    </head>
+    <body>        
+        <div class="navbar-text border-0">
+            <p>
+            <a class="navbar-expand-lg">Practical work #3</a>
+            </p>
+        </div>
+        <form>
+            <div class="form-group col-6">
+                <div class="input-group">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary" id="btnInit" onclick="initArray()">InitArray</button>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <div class="input-group col-6">
+                    <div class="col-6">
+                        <label for="newItem">New Item</label>
+                        <input type="text" class="form-control" id="newItem">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <div class="btn-group-lg">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-primary" onclick="addItemInTheEnd()">Push</button>
+                        <button type="button" class="btn btn-outline-primary"  onclick="removeLastItem()">Pop</button>
+                        <button type="button" class="btn btn-outline-primary"  onclick="removeFirstArray()">Shift</button>
+                        <button type="button" class="btn btn-outline-primary"  onclick="addInTheBegin()">Unshift</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="textControl#1">Array is...</label>
+                <textarea class="form-control" id="textControl#1" rows="3">Array is empty</textarea>
+            </div>
+        </form>
+        <hr/>
+        <form>
+            <div class="form-group col-12">
+                    <div class="col-2">
+                        <label for="printSum">Sum of Elements</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="printSum" readonly="true"/>
+                        <button type="button" class="btn btn-outline-primary"  onclick="sumOfElements()">Print Sum</button>
+                    </div>
+            </div>
+        </form>
+        <hr/>
+        <form>
+            <div class="form-group col-12">
+                <div class="col-2">
+                    <label for="predicate">Predicate</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="predicate"/>
+                    <button type="button" class="btn btn-outline-primary"  onclick="filterArray()">Filter Array</button>
+                </div>
+                <div class="col-2">
+                    <label for="filteredArray">Filtered Array</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="filteredArray"/>
+                </div>
+            </div>
+        </form>
+        <hr/>
+        <form>
+            <div class="form-group col-12">
+                <div class="col-2">
+                    <label for="mapArray">Calculate factorial of each element</label>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-primary"  onclick="convertToArrayOfFactorials()">Update array</button>
+                    <input type="text" class="form-control" id="mapArray"/>
+                </div>
+            </div>
+        </form>
+        <script src="./js/lab03_arrays.js"></script>
+    </body>
+</html>
