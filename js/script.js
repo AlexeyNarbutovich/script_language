@@ -1,9 +1,14 @@
-let calculate = document.getElementById("btnCalc");
-calculate.addEventListener("click", processResult)
+let calculate;
+let check;
+let checkFunction
 
-let checkFunction = checkDublicates();
-let check = document.getElementById("btnCheck");
-check.addEventListener("click", () => checkFunction());
+window.onload = function(){
+	calculate = document.getElementById("btnCalc");
+	check = document.getElementById("btnCheck");
+	calculate.addEventListener("click", processResult)
+	checkFunction = checkDublicates();
+	check.addEventListener("click", () => checkFunction());
+}
 
 function processResult(){
     const firstArgument = document.getElementById("firstArgument").value;
